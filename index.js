@@ -14,7 +14,7 @@ server.get("/*", function (req, res) {
 server.use(cors());
 server.use(jsonServer.bodyParser);
 server.use(middlewares);
-// server.use(router);
+server.use(router);
 
 const PORT = 8000;
 
